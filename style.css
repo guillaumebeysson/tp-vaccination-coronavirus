@@ -8,6 +8,17 @@ body {
 	background-image: url(assets/covid.png);
 }
 
+.navbar {
+	background-color: #cde5eb !important;
+}
+.btn-outline-success {
+	color: #1b3361;
+	border: solid 1px #1b3361;
+}
+.btn-outline-success:hover {
+	color: #ffffff;
+	background-color: #1b3361;
+}
 .fa-virus {
 	color: brown;
 }
@@ -15,21 +26,25 @@ body {
 h1 {
 	font-size: 50px;
 	text-align: center;
-	margin: 50px;
+	margin: 40px;
 	font-family: "Train One", cursive;
 	color: rgb(34, 49, 108);
 }
 .time-to-read {
-	margin: 5px 21%;
-	color: grey;
+	margin: 5px 22%;
+	color: #1b3361;
 }
 h2 {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
-.container {
+.containers {
 	margin: 0 20%;
 	font-family: "Montserrat", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .fa-syringe {
@@ -88,18 +103,22 @@ ul {
 }
 
 footer {
-	margin: 20px 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 footer img {
-	width: 100%;
-	margin: 0 20%;
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer {
+	text-align: center;
 }
 
 @media (max-width: 700px) {
-	.container {
+	.containers {
 		margin: 0 2%;
 	}
 	.block-img-vaccins {
